@@ -3,118 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shagal Sajid - Portfolio</title>
+    <meta name="description" content="Shagal Sajid — Laravel developer, ML explorer, data specialist & photographer based in Kochi, India.">
+    <title>Shagal Sajid — Portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="navbar">
+    <!-- ════════════════════════════════════════════════
+         NAVBAR
+    ════════════════════════════════════════════════ -->
+    <header class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo" id="site-logo-text">sh.sajid</a>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
+
+            <!-- Left: nav links -->
+            <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+                <!-- injected by app.js -->
             </nav>
+
+            <!-- Center: logo -->
+            <a href="#hero" class="nav-logo" id="nav-logo">shagal.sajid</a>
+
+            <!-- Right: CTA -->
             <div class="nav-cta">
-                <a href="#contact" class="btn btn-red">Get in Touch</a>
+                <a href="#contact" class="btn btn-red" id="nav-cta-btn">Get in Touch</a>
             </div>
+
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="container">
+    <!-- ════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════ -->
+    <section class="hero-section" id="hero">
+        <div class="hero-inner">
 
-        <!-- Hero Section -->
-        <section class="hero-section" id="about">
-            <div class="hero-content">
+            <!-- Left column -->
+            <div class="hero-left">
                 <div class="badge" id="hero-tagline">code-bug-fix-repeat.</div>
-                <h1 id="hero-heading">The Power of Imagination</h1>
-                <p class="hero-desc" id="hero-bio">
-                    Loading bio content...
+                <h1 class="hero-heading" id="hero-heading">The Power of Code &amp; Computation</h1>
+                <p class="hero-sub" id="hero-sub">
+                    Building robust backend systems, automated scrapers, and data architectures.
+                    Combining Laravel expertise with machine learning and visual composition.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-dark">Explore Work</a>
-                    <div class="client-logos">
-                        <span class="logo-item">Laravel</span>
-                        <span class="logo-item">Python</span>
-                        <span class="logo-item">Kaggle</span>
+                    <a href="#projects" class="btn btn-dark" id="hero-btn">Explore Work</a>
+                    <div class="brand-pills" id="hero-brands">
+                        <span class="brand-pill">Laravel</span>
+                        <span class="brand-pill">Python</span>
+                        <span class="brand-pill">Kaggle</span>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="fluid-gradient-card">
-                    <div class="gradient-blob"></div>
-                    <div class="card-overlay-text">
-                        <span class="overlay-tag">Creative Focus</span>
-                        <h3>Visualizing Code & Systems</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Capabilities / Services Bento Grid -->
-        <section class="services-section" id="services">
+            <!-- Center: watercolor gradient card -->
+            <div class="hero-card-wrap">
+                <div class="watercolor-card wc-hero" aria-hidden="true">
+                    <div class="wc-blob wc-blob-1"></div>
+                    <div class="wc-blob wc-blob-2"></div>
+                    <div class="wc-blob wc-blob-3"></div>
+                </div>
+            </div>
+
+            <!-- Right column: badge + supporting text -->
+            <div class="hero-right">
+                <div class="hero-badge-red" id="hero-badge">
+                    <span class="badge-dot"></span>
+                    Infinite power
+                </div>
+                <p class="hero-right-text">
+                    Engineering clean systems, insightful data, and compelling visuals — one commit at a time.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         SKILLS / SERVICES GRID
+    ════════════════════════════════════════════════ -->
+    <section class="skills-section" id="services">
+        <div class="section-inner">
             <h2 class="section-title">Our Services</h2>
-            <div class="bento-grid" id="capabilities-grid">
-                <!-- Injected via app.js -->
+            <div class="skills-grid" id="skills-grid">
+                <!-- injected by app.js -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Stats Section -->
-        <section class="stats-section">
-            <h2 class="section-title">Our Stats</h2>
-            <div class="stats-grid" id="stats-grid">
-                <!-- Injected via app.js -->
+    <!-- ════════════════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════════════ -->
+    <section class="about-section" id="about">
+        <div class="section-inner about-inner">
+
+            <!-- Left -->
+            <div class="about-left">
+                <h2 class="about-title" id="about-title">
+                    About Me
+                    <span class="title-underline" aria-hidden="true"></span>
+                </h2>
+                <p class="about-bio" id="about-bio">
+                    I'm a multidisciplinary engineer and data specialist based in Kochi, India. I build
+                    high-performance Laravel backends, automate data collection with custom scrapers, and
+                    explore machine learning through Kaggle competitions.
+                </p>
+                <div class="about-stats" id="about-stats">
+                    <!-- injected by app.js -->
+                </div>
             </div>
-        </section>
 
-        <!-- Projects Showcase -->
-        <section class="projects-section" id="projects">
+            <!-- Right: watercolor card -->
+            <div class="about-right">
+                <div class="watercolor-card wc-about" aria-hidden="true">
+                    <div class="wc-blob wc-blob-1"></div>
+                    <div class="wc-blob wc-blob-2"></div>
+                    <div class="wc-blob wc-blob-3"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         FEATURE BLOCK 1  (card left, text right)
+    ════════════════════════════════════════════════ -->
+    <section class="feature-section" id="feature-1">
+        <div class="section-inner feature-inner">
+
+            <!-- Left: watercolor card -->
+            <div class="feature-card-wrap">
+                <div class="watercolor-card wc-feature" aria-hidden="true">
+                    <div class="wc-blob wc-blob-1"></div>
+                    <div class="wc-blob wc-blob-2"></div>
+                    <div class="wc-blob wc-blob-3"></div>
+                </div>
+            </div>
+
+            <!-- Right: text -->
+            <div class="feature-text">
+                <h2 class="feature-title" id="f1-title">Laravel CMS Specialist</h2>
+                <p class="feature-desc" id="f1-desc">
+                    I architect bespoke content management systems with Laravel — clean role-based auth,
+                    modular admin panels, and APIs built to last.
+                </p>
+                <a href="#projects" class="btn btn-dark" id="f1-btn">View Projects</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         MY REACH  —  STATS SECTION
+    ════════════════════════════════════════════════ -->
+    <section class="reach-section" id="reach">
+        <div class="section-inner">
+            <h2 class="section-title">My Reach</h2>
+            <div class="reach-grid" id="reach-grid">
+                <!-- injected by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         FEATURE BLOCK 2  (text left, pastel card right)
+    ════════════════════════════════════════════════ -->
+    <section class="feature-section feature-reverse" id="feature-2">
+        <div class="section-inner feature-inner">
+
+            <!-- Left: text -->
+            <div class="feature-text">
+                <h2 class="feature-title" id="f2-title">Data Science &amp; ML Exploration</h2>
+                <p class="feature-desc" id="f2-desc">
+                    From classic Titanic survival models to custom CS:GO weapons datasets — Python and Kaggle
+                    experiments that are reproducible and well-documented.
+                </p>
+                <a href="https://www.kaggle.com/shagal-sajid" target="_blank" class="btn btn-dark" id="f2-btn">View on Kaggle</a>
+            </div>
+
+            <!-- Right: pastel gradient card -->
+            <div class="feature-card-wrap">
+                <div class="pastel-card" aria-hidden="true"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         FEATURE BLOCK 3  (pastel card left, text right)
+    ════════════════════════════════════════════════ -->
+    <section class="feature-section" id="feature-3">
+        <div class="section-inner feature-inner">
+
+            <!-- Left: pastel gradient card (mint variant) -->
+            <div class="feature-card-wrap">
+                <div class="pastel-card pastel-mint" aria-hidden="true"></div>
+            </div>
+
+            <!-- Right: text -->
+            <div class="feature-text">
+                <h2 class="feature-title" id="f3-title">Creative Photography</h2>
+                <p class="feature-desc" id="f3-desc">
+                    Visual storytelling through the lens. Over 50k Unsplash views — urban architecture to
+                    abstract minimalism, always chasing clean composition and natural light.
+                </p>
+                <a href="https://unsplash.com/@shagal_sajid" target="_blank" class="btn btn-dark" id="f3-btn">View on Unsplash</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         PROJECTS
+    ════════════════════════════════════════════════ -->
+    <section class="projects-section" id="projects">
+        <div class="section-inner">
             <h2 class="section-title">Featured Work</h2>
             <div class="projects-grid" id="projects-grid">
-                <!-- Injected via app.js -->
+                <!-- injected by app.js -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Blogs Section -->
-        <section class="blog-section" id="blog">
+    <!-- ════════════════════════════════════════════════
+         BLOG
+    ════════════════════════════════════════════════ -->
+    <section class="blog-section" id="blog">
+        <div class="section-inner">
             <h2 class="section-title">Latest Articles</h2>
             <div class="blog-grid" id="blog-grid">
-                <!-- Injected via app.js -->
+                <!-- injected by app.js -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
+    <!-- ════════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════════ -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-inner">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial-card" id="testimonial-card">
+                <!-- injected by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════════════ -->
+    <section class="contact-section" id="contact">
+        <div class="section-inner">
             <div class="contact-card">
-                <h2>Let's build something great</h2>
-                <p>Have a Laravel custom CMS, automated scripting project, or machine learning application you want built? Get in touch and let's work together.</p>
-                <a href="mailto:shagal.sajid36@gmail.com" class="btn btn-red" id="contact-email-btn">Email Me</a>
+                <h2 class="contact-heading">Let's build something great</h2>
+                <p class="contact-sub">
+                    Have a Laravel CMS, scraping pipeline, or ML project in mind?
+                    Drop me a line and let's make it happen.
+                </p>
+                <a href="mailto:shagal.sajid36@gmail.com" class="btn btn-red" id="contact-btn">Email Me</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p>&copy; 2026 <span id="footer-name">Shagal Sajid</span>. All rights reserved.</p>
-            <div class="footer-socials">
-                <a href="#" id="footer-github" target="_blank">GitHub</a>
-                <a href="#" id="footer-kaggle" target="_blank">Kaggle</a>
-                <a href="#" id="footer-unsplash" target="_blank">Unsplash</a>
+    <!-- ════════════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════════════ -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-inner">
+            <div class="footer-circles" aria-hidden="true">
+                <div class="footer-circle fc-black"></div>
+                <div class="footer-circle fc-red"></div>
+            </div>
+            <p class="footer-copy" id="footer-copy">© 2026 Shagal Sajid</p>
+            <div class="footer-socials" id="footer-socials">
+                <!-- injected by app.js -->
             </div>
         </div>
     </footer>
 
-    <!-- Configuration & Loader Scripts -->
+    <!-- Scripts -->
     <script src="config.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
