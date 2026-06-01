@@ -3,299 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shagal Sajid — Laravel developer, ML explorer, data specialist & photographer based in Kochi, India.">
-    <title>Shagal Sajid — Portfolio</title>
+    <meta name="description" content="Shagal Sajid — Software engineer, ML explorer & photographer based in Kochi, India. Specialising in Laravel backend systems, data pipelines, and Kaggle datasets.">
+    <meta property="og:title" content="Shagal Sajid">
+    <meta property="og:description" content="Software engineer, ML explorer & photographer based in Kochi, India.">
+    <title>Shagal Sajid</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ════════════════════════════════════════════════
-         NAVBAR
-    ════════════════════════════════════════════════ -->
+    <!-- ── NAVBAR ──────────────────────────────────────── -->
     <header class="navbar" id="navbar">
         <div class="nav-container">
-
-            <!-- Left: nav links -->
+            <a href="#hero" class="nav-logo" id="nav-logo">shagal.sajid</a>
             <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
                 <!-- injected by app.js -->
             </nav>
-
-            <!-- Center: logo -->
-            <a href="#hero" class="nav-logo" id="nav-logo">shagal.sajid</a>
-
-            <!-- Right: CTA -->
-            <div class="nav-cta">
-                <a href="#contact" class="btn btn-red" id="nav-cta-btn">Get in Touch</a>
-            </div>
-
+            <a href="#contact" class="btn btn-outline-dark" id="nav-cta-btn">Hire me</a>
         </div>
     </header>
 
-    <!-- ════════════════════════════════════════════════
-         HERO
-    ════════════════════════════════════════════════ -->
+    <!-- ── HERO ────────────────────────────────────────── -->
     <section class="hero-section" id="hero">
         <div class="hero-inner">
 
-            <!-- Left column -->
+            <!-- Left: identity -->
             <div class="hero-left">
-                <div class="badge" id="hero-tagline">code-bug-fix-repeat.</div>
-                <h1 class="hero-heading" id="hero-heading">The Power of Code &amp; Computation</h1>
-                <p class="hero-sub" id="hero-sub">
-                    Building robust backend systems, automated scrapers, and data architectures.
-                    Combining Laravel expertise with machine learning and visual composition.
+                <p class="hero-location" id="hero-location">
+                    <span class="location-dot"></span> Kochi, India
                 </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-dark" id="hero-btn">Explore Work</a>
-                    <div class="brand-pills" id="hero-brands">
-                        <span class="brand-pill">Laravel</span>
-                        <span class="brand-pill">Python</span>
-                        <span class="brand-pill">Kaggle</span>
+                <h1 class="hero-name" id="hero-name">Shagal Sajid</h1>
+                <p class="hero-roles" id="hero-roles">
+                    Software Engineer&nbsp;&nbsp;·&nbsp;&nbsp;ML Explorer&nbsp;&nbsp;·&nbsp;&nbsp;Photographer
+                </p>
+                <p class="hero-bio" id="hero-bio">
+                    I build reliable backend systems with Laravel, automate data pipelines,
+                    and explore machine learning through Kaggle. When I'm not shipping code,
+                    I'm behind a lens — with 50k+ views on Unsplash.
+                </p>
+
+                <!-- Social links -->
+                <div class="hero-socials" id="hero-socials">
+                    <a href="https://github.com/shagal-sajid" target="_blank" rel="noopener" class="social-link" id="social-github">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.kaggle.com/shagal-sajid" target="_blank" rel="noopener" class="social-link" id="social-kaggle">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.1.352-.295.352H5.55c-.194 0-.291-.117-.291-.352V.353c0-.233.097-.353.291-.353h2.442c.194 0 .295.12.295.353v14.343l6.316-6.423c.173-.174.35-.26.527-.26h3.261c.148 0 .232.058.249.173.017.116-.025.211-.124.288l-6.19 5.894 6.785 8.529c.099.104.134.2.114.287z"/></svg>
+                        Kaggle
+                    </a>
+                    <a href="https://unsplash.com/@shagal_sajid" target="_blank" rel="noopener" class="social-link" id="social-unsplash">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"/></svg>
+                        Unsplash
+                    </a>
+                    <a href="mailto:shagal.sajid36@gmail.com" class="social-link" id="social-email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Email
+                    </a>
+                </div>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-dark" id="hero-btn-work">View my work</a>
+                    <a href="#blog" class="btn btn-ghost" id="hero-btn-blog">Read writing</a>
+                </div>
+            </div>
+
+            <!-- Right: photo -->
+            <div class="hero-right">
+                <div class="hero-photo-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=85"
+                        alt="Developer at a workspace — Shagal Sajid"
+                        class="hero-photo"
+                        loading="eager"
+                    />
+                    <!-- Floating tag -->
+                    <div class="hero-float-tag">
+                        <span class="float-dot"></span>
+                        <span id="hero-tagline">code-bug-fix-repeat.</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Center: hero image card -->
-            <div class="hero-card-wrap">
-                <img
-                    class="img-card"
-                    src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80"
-                    alt="Developer writing code on a laptop — abstract tech visual"
-                    loading="eager"
-                />
-            </div>
-
-            <!-- Right column: badge + supporting text -->
-            <div class="hero-right">
-                <div class="hero-badge-red" id="hero-badge">
-                    <span class="badge-dot"></span>
-                    Infinite power
-                </div>
-                <p class="hero-right-text">
-                    Engineering clean systems, insightful data, and compelling visuals — one commit at a time.
-                </p>
-            </div>
-
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         SKILLS / SERVICES GRID
-    ════════════════════════════════════════════════ -->
-    <section class="skills-section" id="services">
+    <!-- ── TECH STACK ──────────────────────────────────── -->
+    <section class="stack-section" id="stack">
         <div class="section-inner">
-            <h2 class="section-title">Our Services</h2>
-            <div class="skills-grid" id="skills-grid">
+            <p class="stack-label">Tech I work with</p>
+            <div class="stack-grid" id="stack-grid">
                 <!-- injected by app.js -->
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         ABOUT
-    ════════════════════════════════════════════════ -->
+    <!-- ── ABOUT ───────────────────────────────────────── -->
     <section class="about-section" id="about">
         <div class="section-inner about-inner">
 
-            <!-- Left -->
-            <div class="about-left">
-                <h2 class="about-title" id="about-title">
-                    About Me
-                    <span class="title-underline" aria-hidden="true"></span>
+            <div class="about-photo-col">
+                <img
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=85"
+                    alt="Laravel and PHP code in a terminal"
+                    class="about-photo"
+                    loading="lazy"
+                />
+            </div>
+
+            <div class="about-text-col">
+                <p class="section-eyebrow">About</p>
+                <h2 class="about-heading" id="about-heading">
+                    Building for the web,<br>exploring the data.
                 </h2>
-                <p class="about-bio" id="about-bio">
-                    I'm a multidisciplinary engineer and data specialist based in Kochi, India. I build
-                    high-performance Laravel backends, automate data collection with custom scrapers, and
-                    explore machine learning through Kaggle competitions.
+                <p class="about-bio-long" id="about-bio">
+                    I'm a software engineer based in Kochi, India with a background in
+                    Laravel-based CMS development for freelance clients. I write clean,
+                    maintainable PHP, automate data collection workflows, and run ML
+                    experiments on Kaggle — everything from Titanic survival models to
+                    custom CS:GO weapons datasets.
                 </p>
-                <div class="about-stats" id="about-stats">
+                <p class="about-bio-long">
+                    Outside of engineering, I shoot photography for Unsplash, where my
+                    work has collected over 50k views. I think good visual instinct makes
+                    better engineers.
+                </p>
+                <div class="about-stats-row" id="about-stats">
                     <!-- injected by app.js -->
                 </div>
             </div>
 
-            <!-- Right: about image card -->
-            <div class="about-right">
-                <img
-                    class="img-card"
-                    src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80"
-                    alt="Clean minimal developer workspace with laptop and coffee"
-                    loading="lazy"
-                />
-            </div>
-
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         FEATURE BLOCK 1  (card left, text right)
-    ════════════════════════════════════════════════ -->
-    <section class="feature-section" id="feature-1">
-        <div class="section-inner feature-inner">
-
-            <!-- Left: Laravel / backend image card -->
-            <div class="feature-card-wrap">
-                <img
-                    class="img-card img-card--dark"
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
-                    alt="Backend code in a dark terminal — Laravel PHP development"
-                    loading="lazy"
-                />
-            </div>
-
-            <!-- Right: text -->
-            <div class="feature-text">
-                <h2 class="feature-title" id="f1-title">Laravel CMS Specialist</h2>
-                <p class="feature-desc" id="f1-desc">
-                    I architect bespoke content management systems with Laravel — clean role-based auth,
-                    modular admin panels, and APIs built to last.
-                </p>
-                <a href="#projects" class="btn btn-dark" id="f1-btn">View Projects</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════
-         MY REACH  —  STATS SECTION
-    ════════════════════════════════════════════════ -->
-    <section class="reach-section" id="reach">
-        <div class="section-inner">
-            <h2 class="section-title">My Reach</h2>
-            <div class="reach-grid" id="reach-grid">
-                <!-- injected by app.js -->
-            </div>
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════
-         FEATURE BLOCK 2  (text left, pastel card right)
-    ════════════════════════════════════════════════ -->
-    <section class="feature-section feature-reverse" id="feature-2">
-        <div class="section-inner feature-inner">
-
-            <!-- Left: text -->
-            <div class="feature-text">
-                <h2 class="feature-title" id="f2-title">Data Science &amp; ML Exploration</h2>
-                <p class="feature-desc" id="f2-desc">
-                    From classic Titanic survival models to custom CS:GO weapons datasets — Python and Kaggle
-                    experiments that are reproducible and well-documented.
-                </p>
-                <a href="https://www.kaggle.com/shagal-sajid" target="_blank" class="btn btn-dark" id="f2-btn">View on Kaggle</a>
-            </div>
-
-            <!-- Right: ML / data science image card -->
-            <div class="feature-card-wrap">
-                <img
-                    class="img-card"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                    alt="Data analytics dashboard with charts and graphs — machine learning"
-                    loading="lazy"
-                />
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════
-         FEATURE BLOCK 3  (pastel card left, text right)
-    ════════════════════════════════════════════════ -->
-    <section class="feature-section" id="feature-3">
-        <div class="section-inner feature-inner">
-
-            <!-- Left: photography / Unsplash image card -->
-            <div class="feature-card-wrap">
-                <img
-                    class="img-card"
-                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
-                    alt="Beautiful mountain landscape at golden hour — creative photography"
-                    loading="lazy"
-                />
-            </div>
-
-            <!-- Right: text -->
-            <div class="feature-text">
-                <h2 class="feature-title" id="f3-title">Creative Photography</h2>
-                <p class="feature-desc" id="f3-desc">
-                    Visual storytelling through the lens. Over 50k Unsplash views — urban architecture to
-                    abstract minimalism, always chasing clean composition and natural light.
-                </p>
-                <a href="https://unsplash.com/@shagal_sajid" target="_blank" class="btn btn-dark" id="f3-btn">View on Unsplash</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════
-         PROJECTS
-    ════════════════════════════════════════════════ -->
+    <!-- ── PROJECTS ────────────────────────────────────── -->
     <section class="projects-section" id="projects">
         <div class="section-inner">
-            <h2 class="section-title">Featured Work</h2>
-            <div class="projects-grid" id="projects-grid">
+            <div class="section-header-row">
+                <div>
+                    <p class="section-eyebrow">Work</p>
+                    <h2 class="section-heading">Selected projects</h2>
+                </div>
+                <a href="https://github.com/shagal-sajid" target="_blank" rel="noopener" class="btn btn-outline-dark">All on GitHub →</a>
+            </div>
+            <div class="projects-list" id="projects-grid">
                 <!-- injected by app.js -->
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         BLOG
-    ════════════════════════════════════════════════ -->
+    <!-- ── WRITING ─────────────────────────────────────── -->
     <section class="blog-section" id="blog">
         <div class="section-inner">
-            <h2 class="section-title">Latest Articles</h2>
-            <div class="blog-grid" id="blog-grid">
+            <div class="section-header-row">
+                <div>
+                    <p class="section-eyebrow">Writing</p>
+                    <h2 class="section-heading">Latest articles</h2>
+                </div>
+            </div>
+            <div class="writing-list" id="blog-grid">
                 <!-- injected by app.js -->
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         TESTIMONIALS
-    ════════════════════════════════════════════════ -->
-    <section class="testimonials-section" id="testimonials">
+    <!-- ── PHOTOGRAPHY STRIP ───────────────────────────── -->
+    <section class="photo-strip-section" id="photography">
         <div class="section-inner">
-            <h2 class="section-title">Testimonials</h2>
-            <div class="testimonial-card" id="testimonial-card">
-                <!-- injected by app.js -->
+            <div class="section-header-row">
+                <div>
+                    <p class="section-eyebrow">Photography</p>
+                    <h2 class="section-heading">Through the lens</h2>
+                </div>
+                <a href="https://unsplash.com/@shagal_sajid" target="_blank" rel="noopener" class="btn btn-outline-dark">View on Unsplash →</a>
             </div>
+            <div class="photo-strip">
+                <div class="photo-strip-item">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=500&q=80" alt="Golden hour mountain landscape" loading="lazy"/>
+                </div>
+                <div class="photo-strip-item photo-strip-item--tall">
+                    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=500&q=80" alt="Forest with sunlight filtering through trees" loading="lazy"/>
+                </div>
+                <div class="photo-strip-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=500&q=80" alt="Mountain peak above clouds" loading="lazy"/>
+                </div>
+                <div class="photo-strip-item photo-strip-item--tall">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=500&q=80" alt="City buildings at dusk" loading="lazy"/>
+                </div>
+            </div>
+            <p class="photo-strip-credit">50,000+ views on Unsplash</p>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         CONTACT
-    ════════════════════════════════════════════════ -->
+    <!-- ── CONTACT ─────────────────────────────────────── -->
     <section class="contact-section" id="contact">
-        <div class="section-inner">
-            <div class="contact-card">
-                <h2 class="contact-heading">Let's build something great</h2>
-                <p class="contact-sub">
-                    Have a Laravel CMS, scraping pipeline, or ML project in mind?
-                    Drop me a line and let's make it happen.
-                </p>
-                <a href="mailto:shagal.sajid36@gmail.com" class="btn btn-red" id="contact-btn">Email Me</a>
+        <div class="section-inner contact-inner">
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="contact-heading">Want to work together?</h2>
+            <p class="contact-sub" id="contact-sub">
+                I'm open to freelance Laravel projects, ML collaborations, and interesting
+                engineering challenges. Send me a message and let's talk.
+            </p>
+            <div class="contact-ctas">
+                <a href="mailto:shagal.sajid36@gmail.com" class="btn btn-dark btn-lg" id="contact-btn">
+                    shagal.sajid36@gmail.com
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════
-         FOOTER
-    ════════════════════════════════════════════════ -->
+    <!-- ── FOOTER ──────────────────────────────────────── -->
     <footer class="site-footer" id="site-footer">
         <div class="footer-inner">
-            <div class="footer-circles" aria-hidden="true">
-                <div class="footer-circle fc-black"></div>
-                <div class="footer-circle fc-red"></div>
-            </div>
-            <p class="footer-copy" id="footer-copy">© 2026 Shagal Sajid</p>
+            <a href="#hero" class="footer-logo">shagal.sajid</a>
             <div class="footer-socials" id="footer-socials">
                 <!-- injected by app.js -->
             </div>
+            <p class="footer-copy" id="footer-copy">© 2026 Shagal Sajid · Kochi, India</p>
         </div>
     </footer>
 
