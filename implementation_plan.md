@@ -46,3 +46,5 @@ We are ready to execute Phase 1: removing the "in progress" placeholder and push
 2.  **Execution:** I will make all code changes locally.
 3.  **Local Test:** Run the site locally to ensure no UI breakages.
 4.  **Deployment:** Guide you through triggering the first live deployment.
+
+<!-- test FTP deployment 06/02/2026 14:29:48 -->
