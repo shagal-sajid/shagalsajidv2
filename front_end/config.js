@@ -8,7 +8,7 @@ const SITE_CONFIG = {
         tagline:  "Senior AI Decision Science Consultant",
         roles:    "Data Scientist · Agentic AI · Consultant",
         location: "Bengaluru, India",
-        bio:      "I am a Senior AI Decision Science Consultant specializing in Agentic AI and data-driven strategy. I architect intelligent multi-agent systems, leverage Large Language Models, and build robust decision-science pipelines to solve complex business challenges.",
+        bio:      "Shagal Sajid is a Senior AI Decision Science Consultant specializing in Agentic AI and data-driven strategy. He architects intelligent multi-agent systems, leverages Large Language Models, and builds robust decision-science pipelines to solve complex enterprise challenges.",
         email:    "mail@shagalsajid.com",
     },
 
