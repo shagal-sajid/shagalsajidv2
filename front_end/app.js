@@ -59,6 +59,31 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join("");
     }
 
+    // ── Experience ───────────────────────────────────────
+    const expList = document.getElementById("experience-list");
+    if (expList) {
+        expList.innerHTML = C.experience.map(exp => `
+            <div class="exp-company-block">
+                <div class="exp-header">
+                    <div class="exp-logo">${exp.company.substring(0, 2).toUpperCase()}</div>
+                    <div>
+                        <h3 class="exp-company-name">${exp.company}</h3>
+                        <p class="exp-company-meta">${exp.duration} · ${exp.location}</p>
+                    </div>
+                </div>
+                <div class="exp-roles">
+                    ${exp.roles.map(role => `
+                        <div class="exp-role">
+                            <h4 class="exp-role-title">${role.title}</h4>
+                            <p class="exp-role-date">${role.date}</p>
+                            ${role.location ? `<p class="exp-role-loc">${role.location}</p>` : ''}
+                        </div>
+                    `).join("")}
+                </div>
+            </div>
+        `).join("");
+    }
+
     // ── Projects ─────────────────────────────────────────
     const projectsGrid = document.getElementById("projects-grid");
     if (projectsGrid) {

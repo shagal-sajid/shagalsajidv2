@@ -52,6 +52,39 @@ const SITE_CONFIG = {
         { value: "3+",   label: "Years freelancing" },
     ],
 
+    /* ─── Experience ────────────────────────────────────── */
+    experience: [
+        {
+            company: "Accenture in India",
+            duration: "Full-time · 2 yrs 2 mos",
+            location: "Hybrid",
+            roles: [
+                {
+                    title: "AI Decision Science Consultant",
+                    date: "Jun 2026 - Present · 1 mo",
+                    location: "Bengaluru, Karnataka, India",
+                },
+                {
+                    title: "AI Decision Science Analyst",
+                    date: "May 2024 - May 2026 · 2 yrs 1 mo",
+                    location: "India",
+                }
+            ]
+        },
+        {
+            company: "IBM",
+            duration: "Full-time",
+            location: "Hybrid",
+            roles: [
+                {
+                    title: "Data Scientist / Machine learning Engineer",
+                    date: "Oct 2019 - Apr 2024 · 4 yrs 7 mos",
+                    location: "",
+                }
+            ]
+        }
+    ],
+
     /* ─── Projects ──────────────────────────────────────── */
     projects: [],
 
