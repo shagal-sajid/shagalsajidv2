@@ -49,7 +49,7 @@ const SITE_CONFIG = {
         { value: "8+",   label: "GitHub repos"      },
         { value: "10+",  label: "Kaggle datasets"   },
         { value: "50k+", label: "Unsplash views"    },
-        { value: "3+",   label: "Years freelancing" },
+        { value: "7+",   label: "Years experience" },
     ],
 
     /* ─── Experience ────────────────────────────────────── */
