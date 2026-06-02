@@ -14,12 +14,7 @@ const SITE_CONFIG = {
 
     /* ─── Navigation ────────────────────────────────────── */
     nav: {
-        links: [
-            { label: "About",      href: "#about"       },
-            { label: "Projects",   href: "#projects"    },
-            { label: "Writing",    href: "#blog"         },
-            { label: "Photos",     href: "#photography" },
-        ],
+        links: [],
     },
 
     /* ─── Socials ───────────────────────────────────────── */
