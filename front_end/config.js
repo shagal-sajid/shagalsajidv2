@@ -5,11 +5,11 @@ const SITE_CONFIG = {
     identity: {
         logo:     "shagal.sajid",
         name:     "Shagal Sajid",
-        tagline:  "code-bug-fix-repeat.",
+        tagline:  "Software Engineer & Machine Learning Explorer",
         roles:    "Software Engineer · ML Explorer · Photographer",
         location: "Kochi, India",
         bio:      "I build reliable backend systems with Laravel, automate data pipelines, and explore machine learning through Kaggle. When I'm not shipping code, I'm behind a lens — with 50k+ views on Unsplash.",
-        email:    "shagal.sajid36@gmail.com",
+        email:    "mail@shagalsajid.com",
     },
 
     /* ─── Navigation ────────────────────────────────────── */
@@ -58,36 +58,7 @@ const SITE_CONFIG = {
     ],
 
     /* ─── Projects ──────────────────────────────────────── */
-    projects: [
-        {
-            platform:    "GitHub · Laravel",
-            title:       "GitHub Profile Scraper API",
-            description: "A lightweight Laravel/PHP automation tool that retrieves detailed profile statistics and repositories without OAuth — pure scraping, clean output.",
-            tags:        ["PHP", "Laravel", "Web Scraping", "API"],
-            link:        "https://github.com/shagal-sajid",
-        },
-        {
-            platform:    "GitHub · Python",
-            title:       "ML & Deep Learning Cheat Sheets",
-            description: "Comprehensive reference repository of DL/ML/DataViz cheat sheets — equations, model architectures, and framework comparisons in one place.",
-            tags:        ["Python", "Machine Learning", "Deep Learning", "DataViz"],
-            link:        "https://github.com/shagal-sajid",
-        },
-        {
-            platform:    "Kaggle · Data Science",
-            title:       "CS:GO Weapons Dataset",
-            description: "A curated dataset detailing CS:GO weapon metrics compiled for statistical modelling, damage analysis, and game-balance research.",
-            tags:        ["Kaggle", "Python", "Data Collection"],
-            link:        "https://www.kaggle.com/shagal-sajid",
-        },
-        {
-            platform:    "Kaggle · ML Competition",
-            title:       "Titanic Survival Optimisation",
-            description: "Feature engineering experiments and optimisation algorithms applied to the classic Titanic challenge. Focused on reproducibility and clarity.",
-            tags:        ["Kaggle", "scikit-learn", "Feature Engineering"],
-            link:        "https://www.kaggle.com/shagal-sajid",
-        },
-    ],
+    projects: [],
 
     /* ─── Blog / Writing ────────────────────────────────── */
     blogs: [
