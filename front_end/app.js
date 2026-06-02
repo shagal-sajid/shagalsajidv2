@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     ${exp.roles.map(role => {
                         const roleMonths = calcMonths(role.startDate, role.endDate);
                         const durStr = formatDuration(roleMonths);
-                        const dateStr = \`\${formatDateStr(role.startDate)} - \${formatDateStr(role.endDate)} · \${durStr}\`;
+                        const dateStr = `${formatDateStr(role.startDate)} - ${formatDateStr(role.endDate)} · ${durStr}`;
                         return `
                         <div class="exp-role">
                             <h4 class="exp-role-title">${role.title}</h4>
