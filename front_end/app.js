@@ -60,28 +60,68 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ── Experience ───────────────────────────────────────
+    function calcMonths(startStr, endStr) {
+        const sd = new Date(startStr + "-01");
+        const ed = endStr === "Present" ? new Date() : new Date(endStr + "-01");
+        let m = (ed.getFullYear() - sd.getFullYear()) * 12;
+        m -= sd.getMonth();
+        m += ed.getMonth() + 1;
+        return m;
+    }
+    
+    function formatDuration(months) {
+        const y = Math.floor(months / 12);
+        const m = months % 12;
+        let res = [];
+        if (y > 0) res.push(`${y} yr${y > 1 ? 's' : ''}`);
+        if (m > 0) res.push(`${m} mo${m > 1 ? 's' : ''}`);
+        return res.join(" ") || "0 mos";
+    }
+
+    function formatDateStr(dateStr) {
+        if (dateStr === "Present") return "Present";
+        return new Date(dateStr + "-01").toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    }
+
     const expList = document.getElementById("experience-list");
     if (expList) {
-        expList.innerHTML = C.experience.map(exp => `
+        expList.innerHTML = C.experience.map(exp => {
+            // Calculate total company duration
+            let totalMonths = 0;
+            if (exp.roles.length > 1) {
+                // Simplest way: sum all roles, or diff earliest to latest if overlapping. Assuming sequential:
+                totalMonths = calcMonths(exp.roles[exp.roles.length - 1].startDate, exp.roles[0].endDate);
+            } else if (exp.roles.length === 1) {
+                totalMonths = calcMonths(exp.roles[0].startDate, exp.roles[0].endDate);
+            }
+            const totalDurStr = formatDuration(totalMonths);
+            
+            return `
             <div class="exp-company-block">
                 <div class="exp-header">
                     <div class="exp-logo">${exp.company.substring(0, 2).toUpperCase()}</div>
                     <div>
                         <h3 class="exp-company-name">${exp.company}</h3>
-                        <p class="exp-company-meta">${exp.duration} · ${exp.location}</p>
+                        <p class="exp-company-meta">${exp.type} · ${totalDurStr} · ${exp.location}</p>
                     </div>
                 </div>
                 <div class="exp-roles">
-                    ${exp.roles.map(role => `
+                    ${exp.roles.map(role => {
+                        const roleMonths = calcMonths(role.startDate, role.endDate);
+                        const durStr = formatDuration(roleMonths);
+                        const dateStr = \`\${formatDateStr(role.startDate)} - \${formatDateStr(role.endDate)} · \${durStr}\`;
+                        return `
                         <div class="exp-role">
                             <h4 class="exp-role-title">${role.title}</h4>
-                            <p class="exp-role-date">${role.date}</p>
+                            <p class="exp-role-date">${dateStr}</p>
                             ${role.location ? `<p class="exp-role-loc">${role.location}</p>` : ''}
                         </div>
-                    `).join("")}
+                        `;
+                    }).join("")}
                 </div>
             </div>
-        `).join("");
+            `;
+        }).join("");
     }
 
     // ── Projects ─────────────────────────────────────────
