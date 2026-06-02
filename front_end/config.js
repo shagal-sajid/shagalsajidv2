@@ -5,10 +5,10 @@ const SITE_CONFIG = {
     identity: {
         logo:     "shagal.sajid",
         name:     "Shagal Sajid",
-        tagline:  "Software Engineer & Machine Learning Explorer",
-        roles:    "Software Engineer · ML Explorer · Photographer",
+        tagline:  "Senior AI Decision Science Consultant",
+        roles:    "Data Scientist · Agentic AI · Consultant",
         location: "Kochi, India",
-        bio:      "I build reliable backend systems with Laravel, automate data pipelines, and explore machine learning through Kaggle. When I'm not shipping code, I'm behind a lens — with 50k+ views on Unsplash.",
+        bio:      "I am a Senior AI Decision Science Consultant specializing in Agentic AI and data-driven strategy. I architect intelligent multi-agent systems, leverage Large Language Models, and build robust decision-science pipelines to solve complex business challenges.",
         email:    "mail@shagalsajid.com",
     },
 
@@ -32,20 +32,20 @@ const SITE_CONFIG = {
     /* ─── Tech Stack (grouped by category) ─────────────── */
     stack: [
         {
-            category: "Backend",
-            items: ["Laravel", "PHP", "MySQL", "REST APIs"],
+            category: "Agentic AI & LLMs",
+            items: ["LangChain", "Multi-Agent Systems", "RAG", "Vertex AI"],
         },
         {
-            category: "Data & ML",
-            items: ["Python", "Pandas", "scikit-learn", "Kaggle"],
+            category: "Data Science",
+            items: ["Python", "PyTorch", "scikit-learn", "Pandas"],
         },
         {
-            category: "Scraping",
-            items: ["Scrapy", "BeautifulSoup", "Selenium"],
+            category: "Data Engineering",
+            items: ["Data Pipelines", "SQL", "ETL", "Cloud Architecture"],
         },
         {
-            category: "Tools",
-            items: ["Git", "Linux", "Composer", "VS Code"],
+            category: "Consulting",
+            items: ["Decision Science", "AI Strategy", "Model Optimization", "Analytics"],
         },
     ],
 
