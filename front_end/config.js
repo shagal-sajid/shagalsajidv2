@@ -7,7 +7,7 @@ const SITE_CONFIG = {
         name:     "Shagal Sajid",
         tagline:  "Senior AI Decision Science Consultant",
         roles:    "Data Scientist · Agentic AI · Consultant",
-        location: "Kochi, India",
+        location: "Bengaluru, India",
         bio:      "I am a Senior AI Decision Science Consultant specializing in Agentic AI and data-driven strategy. I architect intelligent multi-agent systems, leverage Large Language Models, and build robust decision-science pipelines to solve complex business challenges.",
         email:    "mail@shagalsajid.com",
     },
@@ -82,6 +82,6 @@ const SITE_CONFIG = {
 
     /* ─── Footer ────────────────────────────────────────── */
     footer: {
-        copy: "© 2026 Shagal Sajid · Kochi, India",
+        copy: "© 2026 Shagal Sajid · Bengaluru, India",
     },
 };
